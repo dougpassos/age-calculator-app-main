@@ -5,29 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  -->
 </head>
 <body>
+  <main>
+    <section id="entrada">
+      <form action="">
+        <label for="Day">Day</label>
+        <input type="text" name="Day" id="Day" placeholder="DD">
+        <label for="Month">Month</label> 
+        <input type="text" name="Month" id="Month" placeholder="MM">
+        <label for="Year">Year</label>
+        <input type="text" name="Year" id="Year" placeholder="YYYY"><br>
+        <button id="calcular"></button>
+      </form>
+          
+    </section>
+    <section id="resultado">
+      <label for="">20</label> years
+      <label for="">12</label> months
+      <label for="">31</label> days
+    </section>
+  </main>
 
-  Day
-  DD
 
-  Month
-  MM
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
