@@ -1,0 +1,32 @@
+:root {  
+  --pri-color-purple: hsl(259, 100%, 65%);
+  --pri-color-light-red: hsl(0, 100%, 67%);
+  --neutro-color-white: hsl(0, 0%, 100%);
+  --neutro-color-off-white: hsl(0, 0%, 94%);
+  --neutro-color-light-grey: hsl(0, 0%, 86%);
+  --neutro-color-smokey-grey: hsl(0, 1%, 44%);
+  --neutro-color-off-black: hsl(0, 0%, 8%);
+  --size-button: 40px;
+}
+
+body {
+  background-color: var(--neutro-color-light-grey);
+}
+
+main {
+  border: red solid;
+  width: 900px;
+  background-color: var(--neutro-color-white)
+}
+
+button#calcular {
+  height: var(--size-button);
+  width: var(--size-button);
+  border-radius: 50%;
+  background-color: var(--pri-color-purple);
+  background-image: url('/assets/images/icon-arrow.svg');
+}
+
+button#calcular:hover{
+  background-color: var(--neutro-color-off-black);
+}
