@@ -25,6 +25,9 @@ button#calcular {
   border-radius: 50%;
   background-color: var(--pri-color-purple);
   background-image: url('/assets/images/icon-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
 }
 
 button#calcular:hover{
