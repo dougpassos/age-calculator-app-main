@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
@@ -17,22 +18,19 @@
 </head>
 <body>
   <main>
-    <section id="entrada">
-      <form action="">
+    <section id="entrada">      
         <label for="Day">Day</label>
-        <input type="text" name="Day" id="Day" placeholder="DD">
+        <input type="text" name="Day" id="day" placeholder="DD">
         <label for="Month">Month</label> 
-        <input type="text" name="Month" id="Month" placeholder="MM">
+        <input type="text" name="Month" id="month" placeholder="MM">
         <label for="Year">Year</label>
-        <input type="text" name="Year" id="Year" placeholder="YYYY"><br>
-        <button id="calcular"></button>
-      </form>
-          
+        <input type="text" name="Year" id="year" placeholder="YYYY"><br>
+        <button id="calcular" onclick="calcIdade()"></button>          
     </section>
     <section id="resultado">
-      <label for="">20</label> years
-      <label for="">12</label> months
-      <label for="">31</label> days
+      <label id="years-result">--</label> years
+      <label id="months-result">--</label> months
+      <label id="day-result">--</label> days
     </section>
   </main>
 
