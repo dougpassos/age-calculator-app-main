@@ -18,19 +18,36 @@
 </head>
 <body>
   <main>
-    <section id="entrada">      
-        <label for="Day">Day</label>
-        <input type="text" name="Day" id="day" placeholder="DD">
-        <label for="Month">Month</label> 
-        <input type="text" name="Month" id="month" placeholder="MM">
-        <label for="Year">Year</label>
-        <input type="text" name="Year" id="year" placeholder="YYYY"><br>
-        <button id="calcular" onclick="calcIdade()"></button>          
+    <section id="entrada">
+      <!--<form action="">-->
+        <div class="formField">
+          <label for="Day">Day</label>
+          <input type="text" name="Day" id="day" placeholder="DD" maxlength="2" required>
+          <div class="div-alert div-alert-month">ssss</div>
+        </div>
+        <div class="formField">          
+          <label for="Month">Month</label>
+          <input type="text" name="Month" id="month" placeholder="MM" maxlength="2" required>
+          <div class="div-alert div-alert-month">ssss</div>
+        </div>
+        <div class="formField">          
+          <label for="Year">Year</label>
+          <input type="text" name="Year" id="year" placeholder="YYYY" maxlength="4" required>
+          <div class="div-alert div-alert-month">ssss</div>
+        </div>
+        <hr><button type="submit" id="calcular" onclick="calcIdade()"></button>          
+      <!--</form>   --> 
     </section>
     <section id="resultado">
-      <label id="years-result">--</label> years
-      <label id="months-result">--</label> months
-      <label id="day-result">--</label> days
+      <div>
+        <label id="years-result">--</label> years
+      </div>
+      <div>
+        <label id="months-result">--</label> months
+      </div>
+      <div>
+        <label id="day-result">--</label> days
+      </div>
     </section>
   </main>
 

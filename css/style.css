@@ -6,17 +6,47 @@
   --neutro-color-light-grey: hsl(0, 0%, 86%);
   --neutro-color-smokey-grey: hsl(0, 1%, 44%);
   --neutro-color-off-black: hsl(0, 0%, 8%);
+  --size-main:500px;
   --size-button: 40px;
 }
 
 body {
   background-color: var(--neutro-color-light-grey);
+  
 }
 
-main {
-  border: red solid;
-  width: 900px;
-  background-color: var(--neutro-color-white)
+main { 
+  width: var(--size-main);
+  height: var(--size-main);
+  background-color: var(--neutro-color-white);
+  border-radius: 5% 5% 35% 5%;
+}
+
+section#entrada {
+  width: 100%;
+  height: 33%;
+  padding: 20px 10px;
+}
+
+div.div-alert{
+  visibility: visible;
+}
+
+div.formField {  
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: auto;
+  gap: 2%;
+}
+
+div.formField *{
+  display: block;
+  width: 90%;
+
+  
 }
 
 button#calcular {
@@ -28,8 +58,13 @@ button#calcular {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 75%;
+  border: none;
 }
 
 button#calcular:hover{
   background-color: var(--neutro-color-off-black);
+}
+
+section#resultado div {
+  display: block;
 }
