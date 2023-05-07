@@ -28,10 +28,6 @@ section#entrada {
   padding: 20px 10px;
 }
 
-div.div-alert{
-  visibility: visible;
-}
-
 div.formField {  
   display: inline-block;
   width: 25%;
@@ -68,3 +64,9 @@ button#calcular:hover{
 section#resultado div {
   display: block;
 }
+
+div.div-alert {  
+  visibility: hidden;
+  color: var(--pri-color-light-red);
+}
+
