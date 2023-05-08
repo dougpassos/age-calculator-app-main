@@ -1,4 +1,5 @@
-:root {  
+:root {
+ 
   --pri-color-purple: hsl(259, 100%, 65%);
   --pri-color-light-red: hsl(0, 100%, 67%);
   --neutro-color-white: hsl(0, 0%, 100%);
@@ -8,6 +9,12 @@
   --neutro-color-off-black: hsl(0, 0%, 8%);
   --size-main:500px;
   --size-button: 40px;
+}
+
+html {
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,400;1,600&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+  font-family: 'Bitter', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,6 +27,7 @@ main {
   height: var(--size-main);
   background-color: var(--neutro-color-white);
   border-radius: 5% 5% 35% 5%;
+  
 }
 
 section#entrada {
@@ -62,7 +70,14 @@ button#calcular:hover{
 }
 
 section#resultado div {
-  display: block;
+  display: block;  
+  font-weight: 800;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+section#resultado label{
+  color: var(--pri-color-purple);
 }
 
 div.div-alert {  
